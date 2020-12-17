@@ -56,6 +56,14 @@ Show what the library does as concisely as possible, developers should be able t
 ## Installation
 Provide step by step series of examples and explanations about how to get a development env running.
 
+###Database Set Up
+1. Connect to psql
+2. Create a development database using the psql command `CREATE DATABASE daily_diary`;
+3. Connect to the database using the psql command `\c daily_diary`;
+4. Run the query we have saved in the file '01_create_entries_table.sql'
+5. Create a test database using the psql command `CREATE DATABASE daily_diary_test`
+6. Repeat steps 3 and 4 for the test database.
+
 ## API Reference
 
 Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
