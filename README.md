@@ -25,6 +25,10 @@ I want to be able to add a new Diary Entry
 |Properties| entries(list)|
 |Actions| add_entry |
 
+![US1 Class Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1_class.svg)
+![US1 Entity Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1_entity.svg)
+![US1 Sequence Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1_sequence.svg)
+
 
 ```
 As a user
