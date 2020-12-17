@@ -8,6 +8,11 @@ class DailyDiary < Sinatra::Base
     'Hello DailyDiary!'
   end
 
+  post '/diary' do
+    @entry = Diary.create(entry: params[:entry])
+    erb :'diary/confirmation'
+  end
+
   get '/diary/new' do
     erb :'diary/new'
   end
