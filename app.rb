@@ -3,13 +3,13 @@
 require 'sinatra/base'
 
 # DailyDiary is an online daily journal app
-class DailyDiary < Sinatra::Base
+class Diary < Sinatra::Base
   get '/' do
     'Hello DailyDiary!'
   end
 
   post '/diary' do
-    @entry = Diary.create(entry: params[:entry])
+    @entry = Entry.create(entry: params[:entry])
     erb :'diary/confirmation'
   end
 

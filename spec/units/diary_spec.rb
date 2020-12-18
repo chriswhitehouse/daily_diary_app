@@ -1,3 +1,0 @@
-describe Diary do
-
-end
