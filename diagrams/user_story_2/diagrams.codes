@@ -1,12 +1,10 @@
-#Diagram.Codes
+# Sequence
 
-## User Story 1
-### Sequence Diagram
 alias client="Client"
 alias controller="app.rb"
 alias model="diary.rb"
 alias views="Views"
-alias db="Diary Database"
+alias db="daily_diary Database"
 
 
 client->controller: "get '/diary/new' request"
@@ -15,7 +13,7 @@ views->controller: "new.erb"
 controller->client: "new.html response"
 client->controller: "post /diary request"
 controller->model: ".create(with params)"
-model->db: "INSERT INTO diary (entry)"
+model->db: "INSERT INTO entries table"
 db->model: "RETURN entry"
 model->controller: "'post /diary'"
 controller->controller: "redirect 'get /diary/confirmation'"
@@ -23,17 +21,16 @@ controller->views: "erb :diary/confirmation"
 views->controller: "confirmation.erb"
 controller->client: "confirmation.html response"
 
-###table definitions
-TABLE "Diary" as diary:
-PK"id"
-"entry"
-
-###basic class definition
-CLASS "Diary" as Diary:
-"entry_list"
-"Add_Entry()"
-
+# Class
 CLASS "Entry" as Entry:
+"id"
+"title"
 "entry"
+"new()"
+".create()"
 
-Diary-Entry: aggregation["0..*","1"]
+# Entity
+TABLE "entries" as entries:
+PK"id"
+"title"
+"entry"

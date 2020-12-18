@@ -20,14 +20,14 @@ As a user
 So that I can keep a daily diary
 I want to be able to add a new Diary Entry
 ```
-|Class | Diary |
+|Class | Entry |
 |---|---|
-|Properties| entries(list)|
-|Actions| add_entry |
+|Properties| id, entry|
+|Actions| #new, .create |
 
-![US1 Class Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1_class.svg)
-![US1 Entity Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1_entity.svg)
-![US1 Sequence Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1_sequence.svg)
+![User Story 1 Class Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1/class.svg)
+![User Story 1 Entity Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1/entity.svg)
+![User Story 1 Sequence Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1/sequence.svg)
 
 
 ```
@@ -35,7 +35,14 @@ As a user
 So that I can identify my entry in future
 I want to give each Diary Entry a title
 ```
+|Class | Entry |
+|---|---|
+|Properties| id, title, entry|
+|Actions| #new, .create |
 
+![User Story 2 Class Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_2/class.svg)
+![User Story 2 Entity Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_2/entity.svg)
+![User Story 2 Sequence Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_2/sequence.svg)
 ```
 As a user
 So that I can browse my previous entries
