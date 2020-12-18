@@ -9,7 +9,7 @@ class Diary < Sinatra::Base
   end
 
   post '/diary' do
-    @entry = Entry.create(entry: params[:entry])
+    @entry = Entry.create(title: params[:title], entry: params[:entry])
     erb :'diary/confirmation'
   end
 

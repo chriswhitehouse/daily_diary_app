@@ -29,7 +29,7 @@ I want to be able to add a new Diary Entry
 ![User Story 1 Entity Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1/entity.svg)
 ![User Story 1 Sequence Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_1/sequence.svg)
 
-
+#### User Story 2
 ```
 As a user
 So that I can identify my entry in future
@@ -65,11 +65,14 @@ Provide step by step series of examples and explanations about how to get a deve
 
 ### Database Set Up
 1. Connect to psql
-2. Create a development database using the psql command `CREATE DATABASE daily_diary`;
-3. Connect to the database using the psql command `\c daily_diary`;
+2. Create a development database using the psql command `CREATE DATABASE daily_diary;`
+3. Connect to the database using the psql command `\c daily_diary;`
 4. Run the query we have saved in the file '01_create_entries_table.sql'
-5. Create a test database using the psql command `CREATE DATABASE daily_diary_test`
+5. Create a test database using the psql command `CREATE DATABASE daily_diary_test;`
 6. Repeat steps 3 and 4 for the test database.
+7. Connect to the database using the psql command `\c daily_diary;`
+8. Run the query we have saved in the file '02_add_title_column.sql'
+9. Repeat steps 7 and 8 for the test database.
 
 ## API Reference
 
