@@ -43,12 +43,13 @@ I want to give each Diary Entry a title
 ![User Story 2 Class Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_2/class.svg)
 ![User Story 2 Entity Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_2/entity.svg)
 ![User Story 2 Sequence Diagram](https://github.com/chriswhitehouse/daily_diary_app/blob/main/diagrams/user_story_2/sequence.svg)
+#### User Story 3
 ```
 As a user
 So that I can browse my previous entries
 I want to see a list of Diary Entry Titles
 ```
-
+#### User Story 4
 ```
 As a user
 So that I can read my previous entries
